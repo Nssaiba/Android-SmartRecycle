@@ -1,38 +1,33 @@
-<!-- Bannière avec badges -->
-<div align="center">
-  <h1><big>♻️ SmartRecycle</big></h1>
-  <h3><sub>L'application de tri intelligent par IA</sub></h3>
-</div>
+# ♻️ SmartRecycle
 
----
+<sub>Application mobile de tri intelligent par IA</sub>
 
-## 📱 **Fonctionnalités**
-<sub>> **Technologie clé** : TensorFlow Lite embarqué</sub>
+## 📋 Description
+Solution de classification des déchets en temps réel via un modèle TensorFlow Lite embarqué, fonctionnant hors ligne. L'application s'intègre avec un backend Spring Boot pour fournir des consignes de tri adaptées aux réglementations locales.
 
-- <sup>📸</sup> **Classification hors ligne** des déchets via l'appareil photo  
-- <sup>🗂️</sup> **Règles locales** stockées en base de données (MySQL)  
-- <sup>🛡️</sup> Communication sécurisée **HTTPS**  
-- <sup>🔄</sup> Adaptabilité aux réglementations locales  
-- <sup>⚡</sup> Performance optimisée pour mobiles  
+## ✨ Fonctionnalités principales
+- **Classification visuelle** des déchets sans connexion Internet
+- **Base de données** des règles locales de recyclage (MySQL)
+- **API sécurisée** en HTTPS pour les mises à jour
+- **Léger et rapide** (optimisé pour mobile)
 
----
+## 🛠 Stack technique
+### Application mobile
+- Android (Kotlin/Java)
+- TensorFlow Lite (modèle embarqué)
 
-## 🎯 **Présentation**
-SmartRecycle est une application mobile intelligente qui facilite le tri des déchets grâce à un modèle de vision par ordinateur embarqué basé sur **TensorFlow Lite**. Elle permet :
-- De classifier instantanément les déchets **sans connexion Internet**
-- D'afficher des consignes de tri adaptées aux règles locales
-- De s'intégrer parfaitement aux contraintes environnementales
+### Backend
+- Spring Boot (Java)
+- MySQL (phpMyAdmin en option)
 
----
+### Outils
+- Postman (tests API)
+- Git/GitHub (gestion de version)
 
-## 🛠️ **Architecture Technique**
-```mermaid
-graph TD
-    A[Application Android] -->|HTTPS| B[Backend Spring Boot]
-    B --> C[(Base de données MySQL)]
-    C --> D[Interface phpMyAdmin]
-    A -->|Modèle embarqué| E[TensorFlow Lite]
-    F[Dashboard Admin] --> B
+## 🔧 Installation
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/votreuser/SmartRecycle.git
 
 
 
