@@ -154,39 +154,38 @@ dependencies {
 ## 📱 Captures d'écran
 
 <details>
-  <summary>✨ <b>Voir les interfaces</b> (cliquer pour déplier)</summary>
+  <summary> <b>Voir les interfaces</b> (cliquer pour déplier)</summary>
 
   ### Figure 1 : Accueil  
   ![interface1Mobile](https://github.com/user-attachments/assets/5684c0ae-85d9-4360-916c-304b40559fc5)  
   *Écran principal présentant :*  
   - 📸 Bouton de **capture photo** pour l'analyse  
-  - ♻️ Accès rapide aux **consignes de tri** par catégorie  
-  - 📊 Statistiques personnelles de recyclage  
+  - ♻️ Accès rapide aux **consignes de tri** par catégorie 
 
   ---
 
   ### Figure 2 : Résultat d'analyse  
   ![interface2Mobile](https://github.com/user-attachments/assets/d5eeb4d3-0413-46e0-8bdf-c68fedb5c166)  
   *Fonctionnalités clés :*  
-  - 🤖 **Prédiction IA** (ex: "glass,plastic,cardboard...")  
-  - 🗑️ **Instructions locales** de recyclage 
+  -  **Prédiction IA** (ex: "glass,plastic,cardboard...")  
+  -  **Instructions a partir de la base de données** de recyclage 
 
   ---
 
   ### Figure 3 : Gestion des consignes *(Admin)*  
   ![inter3MOB](https://github.com/user-attachments/assets/4c81d542-8c47-4ac2-bc41-47bb5d9ffb35)  
   *Pour administrateurs :*  
-  - 🔧 Modification des **règles municipales**  
-  - 🌍 Listage des **consignes de tri**    
-  - 🔄 Synchronisation avec le backend  
+  -  Modification des **règles municipales**  
+  -  Listage des **consignes de tri**    
+  - Synchronisation avec le backend  
 
   ---
 
   ### Figure 4 : Ajout de règle  
   ![interf4Mobile](https://github.com/user-attachments/assets/95837df3-6dd5-45d6-86f6-0e88fdb7a672)  
   *Formulaire avec :*  
-  - 📝 Définition de **nouveaux matériaux**  
-  - 🏷️ Paramétrage des **modalités de tri** 
+  -  Définition de **nouveaux matériaux**  
+  -  Paramétrage des **modalités de tri** 
 </details>
 
 ## Simulation
