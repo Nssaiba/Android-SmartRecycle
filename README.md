@@ -42,8 +42,8 @@ graph TD
    - Repository JPA
 3. **Couche Données** :
    - Tables MySQL : 
-     - `recycling_rules`
-     - `material_categories`
+     - `consigne_tri`
+     
 
 ## Stack technique
 
@@ -153,16 +153,13 @@ dependencies {
 ```
 
 ## 📱 Captures d'écran
+![interface2Mobile](https://github.com/user-attachments/assets/d5eeb4d3-0413-46e0-8bdf-c68fedb5c166)
+![interface1Mobile](https://github.com/user-attachments/assets/5684c0ae-85d9-4360-916c-304b40559fc5)
+![interf4Mobile](https://github.com/user-attachments/assets/95837df3-6dd5-45d6-86f6-0e88fdb7a672)
+![inter3MOB](https://github.com/user-attachments/assets/4c81d542-8c47-4ac2-bc41-47bb5d9ffb35)
 
-![Interface de l'application](/screenshots/app_interface.png)
 
-![Identification d'un déchet](/screenshots/waste_identification.png)
 
-## 🤝 Contribuer
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à proposer une pull request.
-
-## 📄 Licence
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 https://github.com/user-attachments/assets/2757b9b5-43d2-4944-92be-b05254c3de26
 
