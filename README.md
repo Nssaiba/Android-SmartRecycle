@@ -32,7 +32,7 @@ graph TD
     style D fill:#9999ff,stroke:#333
 ```
 
-### Composants :
+### Composants
 1. **Couche Mobile** :
    - Module IA embarqué (TFLite)
    - Appels API sécurisés
@@ -40,39 +40,36 @@ graph TD
    - Contrôleurs Spring Boot
    - Service de règles métier
    - Repository JPA
-3. **Data Layer** :
+3. **Couche Données** :
    - Tables MySQL : 
      - `recycling_rules`
      - `material_categories`
 
-##  Stack technique
+## Stack technique
 
-Application mobile (Android)
+### Application mobile (Android)
+- Java/Kotlin
+- Android SDK 35 (compile) / 24+ (minimum)
+- TensorFlow Lite 2.12.0
+- CameraX 1.2.3
+- Retrofit 2.9.0
 
-Java/Kotlin
-Android SDK 35 (compile) / 24+ (minimum)
-TensorFlow Lite 2.12.0
-CameraX 1.2.3
-Retrofit 2.9.0
+### Backend
+- Spring Boot 3.4.0
+- Spring Security
+- Spring Data JPA
+- MySQL
+- Java 22
+- Maven 3.8.1+
+- H2 Database (pour tests)
 
-
-Backend
-
-Spring Boot 3.4.0
-Spring Security
-Spring Data JPA
-MySQL
-Java 22
-Maven 3.8.1+
-H2 Database (pour tests)
-
-Outils
-
-Postman (tests API)
-Git/GitHub (gestion de version)
-phpMyAdmin (administration MySQL)
+### Outils
+- Postman (tests API)
+- Git/GitHub (gestion de version)
+- phpMyAdmin (administration MySQL)
 
 ## 🔧 Installation
+
 1. Cloner le dépôt :
 ```bash
 git clone https://github.com/Nssaiba/Android-SmartRecycle.git
@@ -97,9 +94,11 @@ cp src/main/resources/application.properties.example src/main/resources/applicat
    - Synchroniser le projet avec Gradle
    - Exécuter l'application sur un émulateur ou un appareil physique
 
-📦 Dépendances
-Backend (Spring Boot)
-gradledependencies {
+## 📦 Dépendances
+
+### Backend (Spring Boot)
+```gradle
+dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -110,8 +109,11 @@ gradledependencies {
     testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
-Frontend Android
-gradledependencies {
+```
+
+### Frontend Android
+```gradle
+dependencies {
     // Core Android libraries
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -148,10 +150,12 @@ gradledependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+```
 
 ## 📱 Captures d'écran
 
 ![Interface de l'application](/screenshots/app_interface.png)
+
 ![Identification d'un déchet](/screenshots/waste_identification.png)
 
 ## 🤝 Contribuer
