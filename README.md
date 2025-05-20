@@ -1,4 +1,4 @@
-# ♻️ SmartRecycle
+**# ♻️ SmartRecycle
 
 <sub>Application mobile de tri intelligent par IA</sub>
 
@@ -69,4 +69,8 @@ graph TD
 git clone https://github.com/votreuser/SmartRecycle.git
 cd SmartRecycle
 https://github.com/user-attachments/assets/c81664c0-fe75-473c-a575-cb7674848bd2
+
+**                   
+
+https://github.com/user-attachments/assets/023100eb-9e9c-4f5e-8aeb-93168cbf09a4
 
