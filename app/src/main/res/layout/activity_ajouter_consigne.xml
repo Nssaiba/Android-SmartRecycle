@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="EcoScan"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Informations sur la consigne"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:layout_marginBottom="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type de déchet"
+                        android:textStyle="bold"
+                        android:textColor="#555555"
+                        android:layout_marginBottom="4dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerTypeDechet"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Couleur de la poubelle"
+                        android:textStyle="bold"
+                        android:textColor="#555555"
+                        android:layout_marginBottom="4dp"/>
+
+                    <EditText
+                        android:id="@+id/etCouleurPoubelle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ex: Verte, Jaune, Bleue..."
+                        android:inputType="text"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="À faire avec ce déchet"
+                        android:textStyle="bold"
+                        android:textColor="#555555"
+                        android:layout_marginBottom="4dp"/>
+
+                    <EditText
+                        android:id="@+id/etAFaire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Instructions de tri recommandées"
+                        android:inputType="textMultiLine"
+                        android:minLines="2"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="À éviter avec ce déchet"
+                        android:textStyle="bold"
+                        android:textColor="#555555"
+                        android:layout_marginBottom="4dp"/>
+
+                    <EditText
+                        android:id="@+id/etAEviter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Choses à ne pas faire avec ce déchet"
+                        android:inputType="textMultiLine"
+                        android:minLines="2"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:layout_marginBottom="24dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnAjouterConsigne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter la consigne"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="4dp"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:drawableStart="@android:drawable/ic_menu_add"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/btnAnnuler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="2dp"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
