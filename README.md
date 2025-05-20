@@ -12,34 +12,27 @@
 - <sup>📸</sup> **Classification hors ligne** des déchets via l'appareil photo  
 - <sup>🗂️</sup> **Règles locales** stockées en base de données (MySQL)  
 - <sup>🛡️</sup> Communication sécurisée **HTTPS**  
+- <sup>🔄</sup> Adaptabilité aux réglementations locales  
+- <sup>⚡</sup> Performance optimisée pour mobiles  
 
 ---
 
-## 🛠️ **Stack Technique**
+## 🎯 **Présentation**
+SmartRecycle est une application mobile intelligente qui facilite le tri des déchets grâce à un modèle de vision par ordinateur embarqué basé sur **TensorFlow Lite**. Elle permet :
+- De classifier instantanément les déchets **sans connexion Internet**
+- D'afficher des consignes de tri adaptées aux règles locales
+- De s'intégrer parfaitement aux contraintes environnementales
+
+---
+
+## 🛠️ **Architecture Technique**
 ```mermaid
-graph LR
-    A[App Android] -->|HTTPS| B[Spring Boot]
-    B --> C[(MySQL)]
-    C --> D[phpMyAdmin]
-    A --> E[TensorFlow Lite]
-SmartRecycle est une application mobile intelligente qui facilite le tri des déchets grâce à un modèle de vision par ordinateur embarqué basé sur TensorFlow Lite. Elle permet à l’utilisateur de capturer une image d’un déchet pour en obtenir instantanément la classification, même sans connexion Internet. L’application s’appuie sur un backend sécurisé développé en Spring Boot, qui fournit des consignes de tri adaptées, stockées dans une base de données MySQL administrée via phpMyAdmin. L’ensemble du système est conçu pour être léger, rapide et adaptable aux règles locales de recyclage, combinant performance, accessibilité et respect des contraintes environnementales.
-
-Technologies et outils utilisés dans SmartRecycle :
-
-Mobile & Intelligence Artificielle :
-Android (Java/Kotlin), TensorFlow Lite, Google Colab
-
-Backend :
-Spring Boot (Java)
-
-Base de données :
-MySQL, administrée via phpMyAdmin
-
-Outils de test et d’analyse :
-Postman
-
-Déploiement & gestion de version :
-Git, GitHub
+graph TD
+    A[Application Android] -->|HTTPS| B[Backend Spring Boot]
+    B --> C[(Base de données MySQL)]
+    C --> D[Interface phpMyAdmin]
+    A -->|Modèle embarqué| E[TensorFlow Lite]
+    F[Dashboard Admin] --> B
 
 
 
