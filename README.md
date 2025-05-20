@@ -24,5 +24,40 @@ App Android]
 ↓ (Admin)
 [phpMyAdmin]
 
+
+
+### Composants :
+1. **Couche Mobile** :
+   - Module IA embarqué (TFLite)
+   - Appels API sécurisés
+
+2. **Couche Backend** :
+   - Contrôleurs Spring Boot
+   - Service de règles métier
+   - Repository JPA
+
+3. **Data Layer** :
+   - Tables MySQL : 
+     - `recycling_rules`
+     - `material_categories`
+
+## 🛠 Stack technique
+### Application mobile
+- Android (Kotlin/Java)
+- TensorFlow Lite (modèle embarqué)
+
+### Backend
+- Spring Boot (Java)
+- MySQL (phpMyAdmin en option)
+
+### Outils
+- Postman (tests API)
+- Git/GitHub (gestion de version)
+
+## 🔧 Installation
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/votreuser/SmartRecycle.git
+cd SmartRecycle
 https://github.com/user-attachments/assets/c81664c0-fe75-473c-a575-cb7674848bd2
 
