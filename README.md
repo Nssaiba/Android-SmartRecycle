@@ -12,6 +12,23 @@ Solution de classification des déchets en temps réel via un modèle TensorFlow
 - **Léger et rapide** (optimisé pour mobile)
 
 ## 🏗 Architecture
+graph TD
+    %% Mobile Components
+    A[App Android] -->|Capture Image| B[TensorFlow Lite]
+    A -->|HTTPS REST| C[Spring Boot]
+    
+    %% Backend Components
+    C -->|JPA/Hibernate| D[(MySQL)]
+    D -->|Admin| E[phpMyAdmin]
+    
+    %% Data Flow
+    B -->|Classification| A
+    C -->|Consignes| A
+    
+    %% Style
+    style A fill:#98ff98,stroke:#333  <!-- Vert pour mobile -->
+    style C fill:#ff9999,stroke:#333 <!-- Rouge pour backend -->
+    style D fill:#9999ff,stroke:#333 <!-- Bleu pour base de données -->
 ## 🏗 Architecture
 
 ```mermaid
