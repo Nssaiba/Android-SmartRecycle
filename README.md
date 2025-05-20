@@ -13,16 +13,15 @@ Solution de classification des déchets en temps réel via un modèle TensorFlow
 
 ## 🏗 Architecture
 
-App Android]
-│ (TensorFlow Lite)
-↓
-[Spring Boot] ← HTTPS → [Client Mobile]
-│
-↓ (JDBC)
-[MySQL Database]
-│
-↓ (Admin)
-[phpMyAdmin]
+## 🏗 Architecture
+```mermaid
+graph TD
+    A[App Android] -->|TensorFlow Lite| B[Capture Image]
+    A -->|HTTPS| C[API Spring Boot]
+    C --> D[(MySQL Database)]
+    D --> E[phpMyAdmin]
+    B --> F[Classification]
+    C --> G[Consignes de tri]
 
 
 
