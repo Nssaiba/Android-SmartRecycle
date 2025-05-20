@@ -13,6 +13,16 @@ Solution de classification des déchets en temps réel via un modèle TensorFlow
 
 ## 🏗 Architecture
 
+App Android]
+│ (TensorFlow Lite)
+↓
+[Spring Boot] ← HTTPS → [Client Mobile]
+│
+↓ (JDBC)
+[MySQL Database]
+│
+↓ (Admin)
+[phpMyAdmin]
 
 https://github.com/user-attachments/assets/c81664c0-fe75-473c-a575-cb7674848bd2
 
