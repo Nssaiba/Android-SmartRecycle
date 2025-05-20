@@ -2,10 +2,6 @@
 <div align="center">
   <h1><big>♻️ SmartRecycle</big></h1>
   <h3><sub>L'application de tri intelligent par IA</sub></h3>
-  
-  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-  [![Android](https://img.shields.io/badge/Android-3DDC84?logo=android)](https://developer.android.com)
-  [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=spring)](https://spring.io)
 </div>
 
 ---
@@ -16,7 +12,6 @@
 - <sup>📸</sup> **Classification hors ligne** des déchets via l'appareil photo  
 - <sup>🗂️</sup> **Règles locales** stockées en base de données (MySQL)  
 - <sup>🛡️</sup> Communication sécurisée **HTTPS**  
-- <sup>👨‍💼</sup> **Dashboard admin** pour gérer les consignes  
 
 ---
 
