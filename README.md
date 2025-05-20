@@ -151,14 +151,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 ```
-
-## 📱 Captures d'écran
-![interface2Mobile](https://github.com/user-attachments/assets/d5eeb4d3-0413-46e0-8bdf-c68fedb5c166)
-Écran d'accueil de SmartRecycle présentant les options principales de l'application. L'interface utilisateur intuitive permet un accès rapide aux fonctionnalités de scan et de consultation des règles de tri.
-![interface1Mobile](https://github.com/user-attachments/assets/5684c0ae-85d9-4360-916c-304b40559fc5)
-![interf4Mobile](https://github.com/user-attachments/assets/95837df3-6dd5-45d6-86f6-0e88fdb7a672)
-![inter3MOB](https://github.com/user-attachments/assets/4c81d542-8c47-4ac2-bc41-47bb5d9ffb35)
-
 ## 📱 Captures d'écran
 
 <details>
@@ -176,9 +168,8 @@ dependencies {
   ### Figure 2 : Résultat d'analyse  
   ![interface2Mobile](https://github.com/user-attachments/assets/d5eeb4d3-0413-46e0-8bdf-c68fedb5c166)  
   *Fonctionnalités clés :*  
-  - 🤖 **Prédiction IA** (ex: "Bouteille en PET")  
-  - 🗑️ **Instructions locales** de recyclage  
-  - ↗️ Boutons de partage/enregistrement  
+  - 🤖 **Prédiction IA** (ex: "glass,plastic,cardboard...")  
+  - 🗑️ **Instructions locales** de recyclage 
 
   ---
 
@@ -186,7 +177,7 @@ dependencies {
   ![inter3MOB](https://github.com/user-attachments/assets/4c81d542-8c47-4ac2-bc41-47bb5d9ffb35)  
   *Pour administrateurs :*  
   - 🔧 Modification des **règles municipales**  
-  - 🌍 Filtrage par zone géographique  
+  - 🌍 Listage des **consignes de tri**    
   - 🔄 Synchronisation avec le backend  
 
   ---
@@ -195,8 +186,7 @@ dependencies {
   ![interf4Mobile](https://github.com/user-attachments/assets/95837df3-6dd5-45d6-86f6-0e88fdb7a672)  
   *Formulaire avec :*  
   - 📝 Définition de **nouveaux matériaux**  
-  - 🏷️ Paramétrage des **modalités de tri**  
-  - 📍 Géolocalisation applicable  
+  - 🏷️ Paramétrage des **modalités de tri** 
 </details>
 
 ## Simulation
