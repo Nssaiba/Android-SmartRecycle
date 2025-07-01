@@ -196,6 +196,8 @@ https://github.com/user-attachments/assets/2757b9b5-43d2-4944-92be-b05254c3de26
 
 
 
-Ce projet est sous licence CC BY-NC 4.0 – utilisation non commerciale uniquement.
+
+
+<b>Ce projet est sous licence CC BY-NC 4.0 – utilisation non commerciale uniquement.</b>
 
 
